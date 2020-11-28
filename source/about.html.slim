@@ -2,12 +2,12 @@
 title: data.pages.about.title
 ---
 
-article.page
+section.page
   .container
+    h2 = data.pages.about.title
     .row
-      h1 = data.pages.about.title
-    .row
-      .p
-        = markdown data.pages.about.body
-      .image
-        = image_tag data.pages.about.image
+      section.flex
+        .page-text
+          = markdown data.pages.about.body
+        .page-image
+          = image_tag data.pages.about.image

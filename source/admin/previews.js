@@ -70,7 +70,7 @@ const NavigationPreview = ({ entry }) => {
     <header className="header-primary">
       <div className="logo">
         <a href="/">
-          <img src="/images/logo.svg" alt="Cake-Fit"/>
+          <img src="/images/cake-fit-logo-400.png" alt="Cake-Fit"/>
         </a>
       </div>
       <a className="nav-button">

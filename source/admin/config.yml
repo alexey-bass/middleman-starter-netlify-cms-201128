@@ -8,7 +8,7 @@ public_folder: /images/uploads
 
 collections:
   - name: product
-    label: Продукция
+    label: Products
     format: yml
     extension: yml
     folder: data/products/
@@ -25,7 +25,7 @@ collections:
 
 #markdown middleman blog example
   - name: blog
-    label: Блог
+    label: Blog
     folder: source/posts/
     extension: .html.md
     format: frontmatter
@@ -39,7 +39,7 @@ collections:
       - {label: Body, name: body, widget: markdown}
 
   - name: pages
-    label: Страницы
+    label: Pages
     create: true
     format: yml
     extension: yml
@@ -56,7 +56,7 @@ collections:
         widget: markdown
 
   - name: settings
-    label: Настройки
+    label: Settings
     files:
       - file: data/settings/navigation.yml
         label: Navigation

@@ -4,4 +4,4 @@ nav_items:
   - label: Продукция
     path: /products/
   - label: Галерея
-    path: /gallery
+    path: /

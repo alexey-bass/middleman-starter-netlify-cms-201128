@@ -1,7 +1,7 @@
 nav_items:
   - label: О Кондитерской
-    path: /
+    path: /about/
   - label: Продукция
     path: /products/
-  - label: Галерея
-    path: /
+  - label: Доставка
+    path: /delivery/

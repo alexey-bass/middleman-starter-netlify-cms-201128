@@ -9,11 +9,13 @@ public_folder: /images/uploads
 collections:
   - name: product
     label: Products
+    label_singular: Product
     format: yml
     extension: yml
     folder: data/products/
     create: true
-    slug: '{{slug}}'
+    identifier_field: slug
+    slug: '{{fields.slug}}'
     fields:
       - {label: Slug, name: slug, widget: string, required: true}
       - {label: Title, name: title, widget: string, required: true}
@@ -39,12 +41,14 @@ collections:
       - {label: Image, name: image, widget: image}
       - {label: Body, name: body, widget: markdown}
 
-  - name: pages
-    label: Pages
-    create: true
+  - name: homepages
+    label: Home Pages
+    label_singular: Home Page
+    create: false
     format: yml
     extension: yml
     folder: data/pages/
+    filter: {field: "homepage", value: true}
     fields:
       - label: Hero
         name: hero
@@ -55,6 +59,22 @@ collections:
       - label: Story
         name: story
         widget: markdown
+
+  - name: pages
+    label: Pages
+    label_singular: Page
+    create: true
+    format: yml
+    extension: yml
+    folder: data/pages/
+    filter: {field: "homepage", value: false}
+    identifier_field: slug
+    slug: '{{fields.slug}}'
+    fields:
+      - {label: Slug, name: slug, widget: string, required: true}
+      - {label: Title, name: title, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Body, name: body, widget: markdown}
 
   - name: settings
     label: Settings

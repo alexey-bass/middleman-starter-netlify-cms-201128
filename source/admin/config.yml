@@ -7,15 +7,15 @@ public_folder: /images/uploads
 #publish_mode: editorial_workflow #optional, enables publishing workflow
 
 collections:
-  #yaml middleman data example
   - name: product
     label: Продукция
     format: yml
     extension: yml
     folder: data/products/
     create: true
-    slug: '{{title}}'
+    slug: '{{slug}}'
     fields:
+      - {label: Slug, name: slug, widget: string, required: true}
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Image, name: image, widget: image, required: true}

@@ -1,7 +1,7 @@
 nav_items:
-  - label: Новости
-    path: /news
+  - label: О Кондитерской
+    path: /
   - label: Продукция
     path: /products/
-  - label: Доставка
-    path: /delivery
+  - label: Галерея
+    path: /gallery

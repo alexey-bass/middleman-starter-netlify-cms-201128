@@ -50,6 +50,7 @@ collections:
     folder: data/pages/
     filter: {field: "homepage", value: true}
     fields:
+      - {label: Homepage, name: homepage, widget: hidden, default: true}
       - label: Hero
         name: hero
         widget: object
@@ -71,6 +72,7 @@ collections:
     identifier_field: slug
     slug: '{{fields.slug}}'
     fields:
+      - {label: Homepage, name: homepage, widget: hidden, default: false}
       - {label: Slug, name: slug, widget: string, required: true}
       - {label: Title, name: title, widget: string}
       - {label: Image, name: image, widget: image}

@@ -1,0 +1,13 @@
+---
+title: data.pages.about.title
+---
+
+article.page
+  .container
+    .row
+      h1 = data.pages.about.title
+    .row
+      .p
+        = markdown data.pages.about.body
+      .image
+        = image_tag data.pages.about.image

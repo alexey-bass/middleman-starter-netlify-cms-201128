@@ -44,7 +44,6 @@ collections:
     format: yml
     extension: yml
     folder: data/pages/
-    files:
     fields:
       - label: Hero
         name: hero

@@ -1,7 +1,7 @@
 nav_items:
   - label: Начало
     path: /
-  - label: Products
+  - label: Галерея
     path: /products/
-  - label: News
+  - label: Новости
     path: /news

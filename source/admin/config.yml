@@ -40,6 +40,7 @@ collections:
 
   - name: pages
     label: Pages
+    create: true
     files:
       - file: "data/pages/home.yml"
         label: Homepage

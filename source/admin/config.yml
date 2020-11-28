@@ -25,7 +25,7 @@ collections:
 
 #markdown middleman blog example
   - name: blog
-    label: Blog
+    label: Блог
     folder: source/posts/
     extension: .html.md
     format: frontmatter
@@ -39,25 +39,25 @@ collections:
       - {label: Body, name: body, widget: markdown}
 
   - name: pages
-    label: Pages
+    label: Страницы
     create: true
+    format: yml
+    extension: yml
+    folder: data/pages/
     files:
-      - file: "data/pages/home.yml"
-        label: Homepage
-        name: home
+    fields:
+      - label: Hero
+        name: hero
+        widget: object
         fields:
-          - label: Hero
-            name: hero
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
-          - label: Story
-            name: story
-            widget: markdown
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+      - label: Story
+        name: story
+        widget: markdown
 
   - name: settings
-    label: Settings
+    label: Настройки
     files:
       - file: data/settings/navigation.yml
         label: Navigation

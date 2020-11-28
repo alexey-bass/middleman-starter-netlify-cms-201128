@@ -9,7 +9,7 @@ public_folder: /images/uploads
 collections:
   #yaml middleman data example
   - name: product
-    label: Product
+    label: Продукция
     format: yml
     extension: yml
     folder: data/products/
@@ -19,7 +19,6 @@ collections:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Image, name: image, widget: image, required: true}
-
       - {label: Weight, name: weight, widget: number}
       - {label: Price, name: price, widget: number}
       - {label: Body, name: body, widget: markdown}
@@ -76,11 +75,11 @@ collections:
           - label: Currency
             name: currency
             widget: select
-            options: ['€', '$', '£']
-            default: '€'
+            options: ['₪', '€', '$', '£']
+            default: '₪'
 
           - label: Weight
             name: weight
             widget: select
-            options: ['kg', ' st', ' lb']
-            default: 'kg'
+            options: ['гр', 'kg', ' st', ' lb']
+            default: 'гр'
